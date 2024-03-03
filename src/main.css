@@ -1,0 +1,48 @@
+body {
+	background-color: var(--mantine-color-gray-1);
+}
+
+.view-worklogs-page {
+	height: 100svh;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.view-worklogs-page canvas {
+	height: 36.5rem !important;
+}
+
+.card {
+	cursor: pointer;
+	transition: transform 0.2s;
+	border: 2px solid var(--mantine-color-lime-2);
+}
+
+.card:hover {
+	transform: scale(1.15);
+	border-color: var(--mantine-color-lime-6);
+	z-index: 100;
+}
+
+.card.disabled {
+	border: 2px solid var(--mantine-color-dimmed);
+}
+
+.card.disabled-pointer-event {
+	pointer-events: none;
+}
+
+.add-profile-card {
+	border: 2px dashed var(--mantine-color-dimmed);
+}
+
+.add-profile-card:hover {
+	border-color: var(--mantine-color-dimmed);
+}
+
+.back-button {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
